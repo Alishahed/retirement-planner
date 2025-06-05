@@ -1,34 +1,31 @@
-# Retirement Planner (Streamlit)
+# Retirement Planner
 
-This is an interactive Streamlit app to help you plan your retirement by simulating investment growth, monthly contributions, inflation, and withdrawals. It allows you to:
+This project provides a simple Streamlit application for experimenting with retirement scenarios. It lets you explore how regular contributions, lump sums, market growth and inflation impact your portfolio over time. The app displays the projected growth of your investments and your progress toward a retirement fund goal.
 
-- Set a retirement age or target fund goal
-- Add monthly contributions and one-time lump sums
-- Model post-retirement withdrawals
-- Adjust for inflation
-- Track progress toward your financial goal
-- Export your data and charts
+## Current Features
 
-## Features
-
-- Monthly compounding
+- Monthly compounding of investment returns
 - Inflation-adjusted projections
-- Flexible inputs: age, fund target, contributions, lump sums, withdrawals
-- Interactive charts and CSV export
-- Streamlit Cloud ready
-
-## Demo
-
-Live app: _[you’ll add your Streamlit Cloud link here after deploying]_
+- Flexible inputs for age, fund target, contributions, lump sums and withdrawals
+- Charts comparing contributions with portfolio value
+- Download buttons for the underlying data and generated charts
 
 ## Requirements
 
 - Python 3.7+
-- Streamlit
-- Pandas
-- Matplotlib
+- `streamlit`
+- `pandas`
+- `matplotlib`
 
-## How to Run Locally
+Install the dependencies with:
+
+```bash
+pip install -r requirements.txt
+```
+
+## Running the App
+
+Clone the repository and launch the Streamlit application:
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/retirement-planner.git
@@ -36,3 +33,4 @@ cd retirement-planner
 pip install -r requirements.txt
 streamlit run retirement_planner.py
 ```
+
